@@ -27,26 +27,33 @@
     }
 
     .motd-card {
-      animation: make-room-for-body 0.4s ease-out 1s forwards;
+      animation:
+        make-room-for-body 0.4s ease-out 1s forwards,
+        make-room-for-body 0.4s ease-out 6s forwards reverse;
       position: absolute;
       top: 28px;
       width: 275px;
     }
 
     .motd-card-title {
-      animation: expand-card-title 0.6s forwards;
+      animation:
+        expand-card-title 0.8s forwards,
+        expand-card-title 0.8s 6.4s forwards reverse;
       background-color: #FFD130;
       color: #2B0400;
       font-weight: bold;
-      margin: 0;
       padding: 8px 0 6px;
+      margin: 0;
+      overflow: hidden;
       text-align: center;
       text-transform: uppercase;
       white-space: nowrap;
     }
 
     .motd-card-body {
-      animation: reveal-card-body 1s ease-in-out 1s forwards;
+      animation:
+        reveal-card-body 1s ease-in-out 1s forwards,
+        reveal-card-body 1s ease-in-out 5s forwards reverse;
       background-color: #FFF;
       color: #2B0400;
       max-height: 0;
